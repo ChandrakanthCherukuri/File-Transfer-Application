@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Share</title>
+</head>
+<body>
+    <div class="join-screen active">
+        <h2>Share your file securely</h2>
+        <button id="sender-start-btn">Create Room</button>
+        <div id="join-id" style="padding: 10px; border: 1px solid; width: 20%;"></div>
+    </div>
+
+    <div class="fs-screen ">
+        <div class="form-input ">
+            <h2>Click here to share your files securely</h2>
+            <input type="file" style="display:block;" id="file-input" />
+        </div>
+    </div>
+
+    <div class="files-list"></div>
+
+
+    <!-- Important: Socket.io must come before code.js -->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>

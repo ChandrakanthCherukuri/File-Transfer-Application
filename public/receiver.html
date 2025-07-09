@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <html>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="join-screen active">
+        <h2>Share Files</h2>
+        <label>Join ID</label>
+        <input type="text" id="join-id">
+        <button id="receiver-start-btn">Connect</button>
+     </div>
+     <div class=" fs-screen">
+        <h1>File shared</h1>
+        <p>file progress</p>
+     </div>
+
+     <div class="files-list"></div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="receiver.js"></script>
+ </body>
+ </html>
